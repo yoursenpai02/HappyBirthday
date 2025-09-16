@@ -24,15 +24,11 @@ $(document).ready(function(){
 
 
 		$('.gift-wrap').click(function(){
-			if(d.getDate() > 21){
-				$(this).addClass('open');
-				setTimeout(function(){
-					alert("Check your bag!♥");
-				},5000)
-			}else{
-				alert("You are not allowed to open this gift now.");
-			}
-		})		
+			$(this).addClass('open');
+			setTimeout(function(){
+				alert("Check your bag!♥");
+			},5000);
+		});	
 
 		var hearts = () => {
 			aud.src = "Happy Birthday.mp3";
@@ -188,3 +184,4 @@ $(document).ready(function(){
 
 		
 	})
+
